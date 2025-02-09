@@ -5,7 +5,7 @@ def   mergeSort(myList):
         right = myList[mid:]
 
         # Recursive call on each half
-        mergeSort(left)
+        mergeSort(left) 
         mergeSort(right)
 
         # Two iterators for traversing the two halves

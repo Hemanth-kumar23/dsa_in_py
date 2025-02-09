@@ -1,21 +1,16 @@
-def bubbleSort(array):
-    
-  # loop to access each array element
-   for i in range(len(array)):
+import time  
 
-    # loop to compare array elements
-      for j in range(0, len(array) - i - 1):
-          
-        if array[j] > array[j + 1]:
-        
-          temp = array[j]
-          array[j] = array[j+1]
-          array[j+1] = temp
+def bubbleSort(arr):
+    n = len(arr)
+    for i in range(n-1): 
+        for j in range(0, n-i-1):  
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
+arr = [64, 34, 25, 12, 22, 11, 90]
 
-list = [5,1,4,2,8]
-
-bubbleSort(list)
-
-print('Sorted Array in Ascending Order:')
-print(list)
+start = time.perf_counter() 
+bubbleSort(arr)
+end = time.perf_counter() 
+print("Sorted array is:", arr)
+print(f"Time taken: {end - start:.6f} seconds")  
