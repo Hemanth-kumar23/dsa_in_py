@@ -1,7 +1,6 @@
+# Binary Search in python 
 def binarySearch(array, x, low, high):
-
-    if high >= low:
-
+    if low<= high:
         mid = low + (high - low)//2
 
         # If found at mid, then return it
@@ -19,8 +18,9 @@ def binarySearch(array, x, low, high):
     else:
         return -1
 
+
 array = [3, 4, 5, 6, 7, 8, 9]
-x = 5
+x = 4
 
 result = binarySearch(array, x, 0, len(array)-1)
 
@@ -28,3 +28,4 @@ if result != -1:
     print("Element is present at index " + str(result))
 else:
     print("Not found")
+ 
