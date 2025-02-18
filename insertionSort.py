@@ -19,3 +19,4 @@ print('Sorted Array in Ascending Order:')
 print(arr)
 end=time.perf_counter()
 print("the time is:",end-start)
+                                                                                                                    
