@@ -22,6 +22,14 @@ class LinkedList:
         new_node.ref = self.head
         self.head = new_node
 
+    def delete_beg(self):
+        if self.head is None :
+            print("the ll is emtyp so we can't delete anything ")
+        else:
+            self.head = self.head.ref  
+
 ll1 = LinkedList()
 ll1.add_begn(10)
+ll1.add_begn(20)
+ll1.delete_beg()
 ll1.print_ll()
